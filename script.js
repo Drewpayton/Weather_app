@@ -10,10 +10,14 @@ async function getData() {
       throw new Error(`Response status: ${response.status}`);
     }
     const json = await response.json();
-    console.log(json);
+    dogFacts(json);
   } catch (err) {
     console.error(err.message);
   }
 }
 
-getData();
+// getData();
+
+function dogFacts(data) {
+  console.log(data.data[0]);
+}
