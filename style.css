@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+.roboto-slab {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 html {
     height: 100%;
 }
@@ -13,4 +19,52 @@ body {
     border: 15px solid #618094;
     border-radius: 20px;
     box-shadow: 0px 0px 0px 10px #618094;
+}
+
+.before {
+    color: whitesmoke;
+    display: grid;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.before h1 {
+    font-size: 75px;
+    text-shadow: 2px 2px 40px black;
+}
+
+.before input {
+    width: 250px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 25px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px;
+    height: 40px;
+    transition: width .5s;
+    text-align: center;
+}
+
+.search-button {
+    width: 250px;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid black;
+    height: 40px;
+    text-align: center;
+}
+
+.before input:hover {
+    width: 450px;
+}
+
+.before input:focus {
+    width: 450px;
+}
+
+.search-button {
+    background-color: red;
+    color: whitesmoke;
+    max-width: 100px;
 }
